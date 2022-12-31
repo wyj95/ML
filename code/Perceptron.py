@@ -64,6 +64,7 @@ if __name__ == "__main__":
     print(y)
     print(perceptron.test(x, y))
     print(perceptron.w, perceptron.b)
+
     import matplotlib.pyplot as plt
     plt.plot([0, 1], [-b/w[0, 0], -(b+w[0, 1])/w[0, 0]], c="red")
     plt.plot([0, 1], [-perceptron.b/perceptron.w[0, 0], -(perceptron.b+perceptron.w[0, 1])/perceptron.w[0, 0]],
